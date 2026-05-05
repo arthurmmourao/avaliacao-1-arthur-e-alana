@@ -40,8 +40,20 @@ def menu():
 
 
 def main():
-    livros = [] 
+    livros = []
     proximo_id = 1
+
+    livro1 = criar_livro(proximo_id, "Dom Casmurro", "Machado de Assis")
+    livros = adicionar_livro(livros, livro1)
+    proximo_id += 1
+
+    livro2 = criar_livro(proximo_id, "1984", "George Orwell")
+    livros = adicionar_livro(livros, livro2)
+    proximo_id += 1
+
+    livro3 = criar_livro(proximo_id, "O Pequeno Príncipe", "Antoine de Saint-Exupéry")
+    livros = adicionar_livro(livros, livro3)
+    proximo_id += 1
 
     while True:
         menu()
